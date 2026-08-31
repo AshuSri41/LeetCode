@@ -4,7 +4,7 @@ public:
     {
         sort(nums1.begin(), nums1.end());
         sort(nums2.begin(), nums2.end());
-        //sort and compare
+        //sort and compare -- o(n+m) approach not using freq appr
         vector<int> ans;
 
         int i = 0;
