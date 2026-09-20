@@ -3,11 +3,9 @@ public:
     int removeElement(vector<int>& nums, int val) {
         int k = 0;
 
-        //self k swap
-
-        for (int i = 0; i < nums.size(); i++) {
-            if (nums[i] != val) {
-                swap(nums[i], nums[k]);
+        for(int i = 0; i < nums.size(); i++) {
+            if(nums[i] != val) {
+                nums[k] = nums[i];
                 k++;
             }
         }
